@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06370A9C26708B8400D1FB02 /* Family+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06370A9A26708B8400D1FB02 /* Family+CoreDataClass.swift */; };
+		06370A9F26709A1D00D1FB02 /* FamilyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06370A9E26709A1D00D1FB02 /* FamilyController.swift */; };
 		06A106A8266F5C3400EF2328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A106A7266F5C3400EF2328 /* AppDelegate.swift */; };
 		06A106AA266F5C3400EF2328 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A106A9266F5C3400EF2328 /* SceneDelegate.swift */; };
 		06A106AC266F5C3400EF2328 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A106AB266F5C3400EF2328 /* ViewController.swift */; };
@@ -14,9 +16,15 @@
 		06A106B2266F5C3400EF2328 /* CoreDataApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 06A106B0266F5C3400EF2328 /* CoreDataApp.xcdatamodeld */; };
 		06A106B4266F5C3500EF2328 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06A106B3266F5C3500EF2328 /* Assets.xcassets */; };
 		06A106B7266F5C3500EF2328 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A106B5266F5C3500EF2328 /* LaunchScreen.storyboard */; };
+		06A106C0266F5E0500EF2328 /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A106BE266F5E0500EF2328 /* Person+CoreDataClass.swift */; };
+		06A106C4266F84D900EF2328 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A106C3266F84D900EF2328 /* DataController.swift */; };
+		06A106C9266F873100EF2328 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A106C7266F873100EF2328 /* Cell.swift */; };
+		06A106CA266F873100EF2328 /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06A106C8266F873100EF2328 /* Cell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06370A9A26708B8400D1FB02 /* Family+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Family+CoreDataClass.swift"; sourceTree = "<group>"; };
+		06370A9E26709A1D00D1FB02 /* FamilyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyController.swift; sourceTree = "<group>"; };
 		06A106A4266F5C3400EF2328 /* CoreDataApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06A106A7266F5C3400EF2328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06A106A9266F5C3400EF2328 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +34,10 @@
 		06A106B3266F5C3500EF2328 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06A106B6266F5C3500EF2328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06A106B8266F5C3500EF2328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06A106BE266F5E0500EF2328 /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
+		06A106C3266F84D900EF2328 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		06A106C7266F873100EF2328 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		06A106C8266F873100EF2328 /* Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +70,38 @@
 		06A106A6266F5C3400EF2328 /* CoreDataApp */ = {
 			isa = PBXGroup;
 			children = (
+				06A106C6266F870700EF2328 /* Cells */,
+				06A106C2266F5E1C00EF2328 /* Models */,
 				06A106A7266F5C3400EF2328 /* AppDelegate.swift */,
 				06A106A9266F5C3400EF2328 /* SceneDelegate.swift */,
 				06A106AB266F5C3400EF2328 /* ViewController.swift */,
+				06A106C3266F84D900EF2328 /* DataController.swift */,
 				06A106AD266F5C3400EF2328 /* Main.storyboard */,
 				06A106B3266F5C3500EF2328 /* Assets.xcassets */,
 				06A106B5266F5C3500EF2328 /* LaunchScreen.storyboard */,
 				06A106B8266F5C3500EF2328 /* Info.plist */,
 				06A106B0266F5C3400EF2328 /* CoreDataApp.xcdatamodeld */,
+				06370A9E26709A1D00D1FB02 /* FamilyController.swift */,
 			);
 			path = CoreDataApp;
+			sourceTree = "<group>";
+		};
+		06A106C2266F5E1C00EF2328 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				06370A9A26708B8400D1FB02 /* Family+CoreDataClass.swift */,
+				06A106BE266F5E0500EF2328 /* Person+CoreDataClass.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		06A106C6266F870700EF2328 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				06A106C7266F873100EF2328 /* Cell.swift */,
+				06A106C8266F873100EF2328 /* Cell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06A106B7266F5C3500EF2328 /* LaunchScreen.storyboard in Resources */,
+				06A106CA266F873100EF2328 /* Cell.xib in Resources */,
 				06A106B4266F5C3500EF2328 /* Assets.xcassets in Resources */,
 				06A106AF266F5C3400EF2328 /* Main.storyboard in Resources */,
 			);
@@ -141,7 +176,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				06A106B2266F5C3400EF2328 /* CoreDataApp.xcdatamodeld in Sources */,
+				06A106C4266F84D900EF2328 /* DataController.swift in Sources */,
+				06A106C9266F873100EF2328 /* Cell.swift in Sources */,
+				06370A9C26708B8400D1FB02 /* Family+CoreDataClass.swift in Sources */,
+				06370A9F26709A1D00D1FB02 /* FamilyController.swift in Sources */,
 				06A106AC266F5C3400EF2328 /* ViewController.swift in Sources */,
+				06A106C0266F5E0500EF2328 /* Person+CoreDataClass.swift in Sources */,
 				06A106A8266F5C3400EF2328 /* AppDelegate.swift in Sources */,
 				06A106AA266F5C3400EF2328 /* SceneDelegate.swift in Sources */,
 			);
